@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="gestion:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8819118-a48e-40e3-ae73-0df6023978be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/java/com/edu/centrodeequiposjakarta/controller/InventarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/java/com/edu/centrodeequiposjakarta/controller/InventarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/java/com/edu/centrodeequiposjakarta/model/Equipos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/java/com/edu/centrodeequiposjakarta/model/Equipos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/java/com/edu/centrodeequiposjakarta/repository/GestionInventario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/java/com/edu/centrodeequiposjakarta/repository/GestionInventario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/java/com/edu/centrodeequiposjakarta/service/EquipoServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/java/com/edu/centrodeequiposjakarta/service/EquipoServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/webapp/WEB-CONFIG/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/webapp/WEB-CONFIG/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/webapp/views/principal.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/webapp/WEB-CONFIG/principal.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/webapp/views/vistageneral.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/webapp/views/vistageneral.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA - II/centro-de-equipos-jakarta/src/main/webapp/views/vistaprincipal.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA - II/jax-rs-jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA - II/jax-rs-jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA - II/records" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA - II/records" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ddeelena&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ddeelena/Programacion-II.git&quot;,
+    &quot;accountId&quot;: &quot;e679881b-6ebb-4dca-9e9a-046583f812de&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2svHY4DNqrJzvgr0vZoqIpuskK6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;GlassFish Server.GlassFish .executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gestion [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.gestion [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Derly EQP/Programacion II/gestion/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Derly EQP\Programacion II\gestion\src\main\resources" />
+      <recent name="C:\Users\Derly EQP\Programacion II\gestion\src\main\java\edu\co\gestion" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GlassFish " type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish " ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="openjdk-23">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <deployment>
+        <artifact name="gestion:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="gestion:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8819118-a48e-40e3-ae73-0df6023978be" name="Changes" comment="" />
+      <created>1739329179701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739329179701</updated>
+      <workItem from="1739329181207" duration="2549000" />
+      <workItem from="1739450265622" duration="557000" />
+      <workItem from="1739451164062" duration="454000" />
+      <workItem from="1739494191088" duration="398000" />
+      <workItem from="1739841663715" duration="180000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
