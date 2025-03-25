@@ -1,21 +1,28 @@
 package edu.co.sistemagestionempleos.service.impl;
 
+import edu.co.sistemagestionempleos.model.Candidato;
 import edu.co.sistemagestionempleos.model.Empresa;
 import edu.co.sistemagestionempleos.repository.EmpresaRepository;
 import edu.co.sistemagestionempleos.service.EmpresaService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class EmpresasServiceImpl implements EmpresaService {
 
-    @Autowired
-    private EmpresaRepository empresaRepository;
 
+    private final EmpresaRepository empresaRepository;
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public List<Empresa> getAllEmpresas() {
@@ -54,4 +61,10 @@ public class EmpresasServiceImpl implements EmpresaService {
                     return empresa;
                 });
     }
+
+    public Optional<Integer> obtenerEmpresaIdPorUsername(String username) {
+        return empresaRepository.findByUser_Username(username)
+                .map(Empresa::getId);
+    }
+
 }

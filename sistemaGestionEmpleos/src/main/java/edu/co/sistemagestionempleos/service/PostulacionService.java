@@ -14,4 +14,5 @@ public interface PostulacionService {
     Optional<Postulacion> updatePostulacion(Integer id, Postulacion postulacion);
     List<Postulacion> getPostulacionesByCandidato(Integer candidato_id);
     List<Postulacion> getPostulacionesByOferta(Integer oferta_id);
+    boolean existePostulacion(Integer candidatoId, Integer ofertaId);
 }

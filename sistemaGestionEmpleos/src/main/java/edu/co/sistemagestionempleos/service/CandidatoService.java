@@ -13,4 +13,5 @@ public interface CandidatoService {
     Candidato createCandidato(Candidato candidato);
     Optional<Candidato> updateCandidato(Integer id, Candidato candidato);
     Optional<Candidato> deleteCandidato(Integer id);
+    Optional<Integer> obtenerCandidatoIdPorUsername(String username);
 }

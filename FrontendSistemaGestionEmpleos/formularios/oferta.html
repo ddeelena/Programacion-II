@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nueva Oferta</title>
+    <link rel="stylesheet" href="css/oferta.css">
+</head>
+<body>
+   <div class="container">
+        <h2>Publicar Nueva Oferta de Empleo</h2>
+        <form id="formOferta">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+
+            <label for="salarioMin">Salario Mínimo:</label>
+            <input type="number" id="salarioMin" name="salarioMin" step="0.01" required>
+
+            <label for="salarioMax">Salario Máximo:</label>
+            <input type="number" id="salarioMax" name="salarioMax" step="0.01" required>
+
+            <label for="requisitos">Requisitos:</label>
+            <textarea id="requisitos" name="requisitos" required></textarea>
+
+            <label for="tipoJornada">Tipo de Jornada:</label>
+            <select id="tipoJornada" name="tipoJornada">
+                <option value="TIEMPO_COMPLETO">Tiempo Completo</option>
+                <option value="MEDIO_TIEMPO">Medio Tiempo</option>
+                <option value="POR_HORAS">Por Horas</option>
+            </select>
+
+            <label for="modalidad">Modalidad:</label>
+            <select id="modalidad" name="modalidad">
+                <option value="PRESENCIAL">Presencial</option>
+                <option value="REMOTO">Remoto</option>
+                <option value="HIBRIDO">Híbrido</option>
+            </select>
+
+            <label for="ubicacion">Ubicación:</label>
+            <input type="text" id="ubicacion" name="ubicacion" required>
+
+            <label for="fechaExpiracion">Fecha de Expiración:</label>
+            <input type="date" id="fechaExpiracion" name="fechaExpiracion" required>
+
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+                <option value="ACTIVA">Activa</option>
+                <option value="PAUSADA">Pausada</option>
+                <option value="CERRADA">Cerrada</option>
+            </select>
+            <button ><a href="../job-listing-master/category.html">Salir</a></button>
+            <button type="button" id="publicarBtn">Publicar Oferta</button>
+        </form>
+        <p id="mensaje"></p>
+    </div>
+    <!-- <div class="wrapper bg-white">
+        <div class="h2 text-center">EmpleoSAS</div>
+        <div class="h4 text-muted text-center pt-2">Nueva Oferta Laboral</div>
+        <div id="role-error" class="text-center text-danger" style="display: none;">
+            Solo usuarios con rol ADMIN o EMPRESA pueden crear ofertas.
+        </div>
+        <form id="nuevaOfertaForm" class="pt-3" style="display: none;">
+            <div class="form-group py-2">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" placeholder="Título de la oferta" required>
+            </div>
+            <div class="form-group py-2">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" placeholder="Descripción de la oferta" required></textarea>
+            </div>
+            <div class="form-group py-2">
+                <label for="salarioMin">Salario Mínimo:</label>
+                <input type="number" id="salarioMin" placeholder="Salario mínimo" required>
+            </div>
+            <div class="form-group py-2">
+                <label for="salarioMax">Salario Máximo:</label>
+                <input type="number" id="salarioMax" placeholder="Salario máximo" required>
+            </div>
+            <div class="form-group py-2">
+                <label for="requisitos">Requisitos:</label>
+                <textarea id="requisitos" placeholder="Requisitos de la oferta" required></textarea>
+            </div>
+            <div class="form-group py-2">
+                <label for="tipoJornada">Tipo de Jornada:</label>
+                <select id="tipoJornada" required>
+                    <option value="TIEMPO_COMPLETO">Tiempo Completo</option>
+                    <option value="MEDIO_TIEMPO">Medio Tiempo</option>
+                    <option value="POR_HORAS">Por Horas</option>
+                </select>
+            </div>
+            <div class="form-group py-2">
+                <label for="modalidad">Modalidad:</label>
+                <select id="modalidad" required>
+                    <option value="PRESENCIAL">Presencial</option>
+                    <option value="REMOTO">Remoto</option>
+                    <option value="HIBRIDO">Híbrido</option>
+                </select>
+            </div>
+            <div class="form-group py-2">
+                <label for="ubicacion">Ubicación:</label>
+                <input type="text" id="ubicacion" placeholder="Ubicación" required>
+            </div>
+            <div class="form-group py-2">
+                <label for="fechaPublicacion">Fecha de Publicación:</label>
+                <input type="date" id="fechaPublicacion" required>
+            </div>
+            <div class="form-group py-2">
+                <label for="fechaExpiracion">Fecha de Expiración:</label>
+                <input type="date" id="fechaExpiracion" required>
+            </div>
+            <div class="form-group py-2">
+                <label for="estado">Estado:</label>
+                <select id="estado" required>
+                    <option value="ACTIVA">Activa</option>
+                    <option value="PAUSADA">Pausada</option>
+                    <option value="CERRADA">Cerrada</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-block text-center my-3">Crear Oferta</button>
+        </form>
+    </div -->
+
+    <script src="js/oferta.js"></script>
+</body>
+</html>

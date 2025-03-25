@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/ofertas")
+@RequestMapping("/api/public/ofertas")
 public class OfertaController {
 
     @Autowired
@@ -19,7 +19,9 @@ public class OfertaController {
 
     @GetMapping
     public List<OfertaEmpleo> getAllOfertas() {
-        return ofertaService.getAllOfertas();
+        List<OfertaEmpleo> ofertaEmpleoList= ofertaService.getAllOfertas();
+        System.out.println(ofertaEmpleoList);
+        return ofertaEmpleoList;
     }
 
     @GetMapping("/{id}")

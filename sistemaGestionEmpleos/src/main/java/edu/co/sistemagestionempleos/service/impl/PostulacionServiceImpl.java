@@ -16,7 +16,9 @@ public class PostulacionServiceImpl implements PostulacionService {
 
     @Autowired
     private PostulacionRepository postulacionRepository;
+    @Autowired
     private CandidatoRepository candidatoRepository;
+    @Autowired
     private OfertaRepository ofertaRepository;
 
     public List<Postulacion> getAllPostulaciones() {
@@ -55,5 +57,12 @@ public class PostulacionServiceImpl implements PostulacionService {
 
     public List<Postulacion> getPostulacionesByOferta(Integer oferta_id) {
         return postulacionRepository.findByOfertaEmpleo_Id(oferta_id);
+    }
+
+
+    public boolean existePostulacion(Integer candidatoId, Integer ofertaId) {
+        boolean existe= postulacionRepository.existsByCandidatoIdAndOfertaEmpleoId(candidatoId, ofertaId);
+        System.out.println("Existe "+existe);
+        return existe;
     }
 }

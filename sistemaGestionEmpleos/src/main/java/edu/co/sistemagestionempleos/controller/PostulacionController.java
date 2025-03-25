@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/postulaciones")
@@ -47,5 +49,15 @@ public class PostulacionController {
     @GetMapping("/oferta/{ofertaId}")
     public List<Postulacion> getPostulacionesByOferta(@PathVariable Integer ofertaId) {
         return postulacionService.getPostulacionesByOferta(ofertaId);
+    }
+
+    @GetMapping("/existe/{candidatoId}/{ofertaId}")
+    public ResponseEntity<Map<String, Boolean>> existePostulacion(
+            @PathVariable Integer candidatoId,
+            @PathVariable Integer ofertaId) {
+
+        boolean existe = postulacionService.existePostulacion(candidatoId, ofertaId);
+        System.out.println("existe "+existe);
+        return ResponseEntity.ok(Collections.singletonMap("existe", existe));
     }
 }

@@ -1,13 +1,19 @@
 package edu.co.sistemagestionempleos.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
-import org.springframework.boot.autoconfigure.web.WebProperties;
+import lombok.Data;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.LocalDate;
+import java.util.Collection;
 import java.util.List;
 
-@Entity
-@Table(name = "candidatos")
+@Entity  // 📌 Indica que esta clase representa una tabla en la base de datos.
+@Data    // 📌 Genera automáticamente los métodos como getters, setters y toString.
+@Table(name = "candidatos")  // 📌 Especifica que la tabla en la base de datos se llamará "candidatos".
 public class Candidato {
 
     @Id
@@ -29,102 +35,29 @@ public class Candidato {
     private String educacion;
     private LocalDate fechaRegistro;
 
-    public Candidato(Integer id, String nombre, LocalDate fechaRegistro, String educacion,
-                     String correo, String habilidades, String experienciaLaboral,
-                     String apellido, String telefono, String cvUrl) {
+    @OneToOne
+    @JoinColumn(name = "user_id", nullable = false)
+    @JsonIgnoreProperties({"authorities", "password", "enabled", "accountNonExpired", "credentialsNonExpired", "accountNonLocked"})
+    private User user;
+
+    public Candidato(Integer id, String nombre, String apellido, String correo, String telefono,
+                     String cvUrl, String habilidades, String experienciaLaboral, String educacion,
+                     LocalDate fechaRegistro, User user) {
         this.id = id;
         this.nombre = nombre;
-        this.fechaRegistro = fechaRegistro;
-        this.educacion = educacion;
-        this.correo = correo;
-        this.habilidades = habilidades;
-        this.experienciaLaboral = experienciaLaboral;
         this.apellido = apellido;
+        this.correo = correo;
         this.telefono = telefono;
         this.cvUrl = cvUrl;
+        this.habilidades = habilidades;
+        this.experienciaLaboral = experienciaLaboral;
+        this.educacion = educacion;
+        this.fechaRegistro = fechaRegistro;
+        this.user = user;
     }
 
     public Candidato() {
 
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    public String getCorreo() {
-        return correo;
-    }
-
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
-
-    public String getCvUrl() {
-        return cvUrl;
-    }
-
-    public void setCvUrl(String cvUrl) {
-        this.cvUrl = cvUrl;
-    }
-
-    public String getHabilidades() {
-        return habilidades;
-    }
-
-    public void setHabilidades(String habilidades) {
-        this.habilidades = habilidades;
-    }
-
-    public String getExperienciaLaboral() {
-        return experienciaLaboral;
-    }
-
-    public void setExperienciaLaboral(String experienciaLaboral) {
-        this.experienciaLaboral = experienciaLaboral;
-    }
-
-    public String getEducacion() {
-        return educacion;
-    }
-
-    public void setEducacion(String educacion) {
-        this.educacion = educacion;
-    }
-
-    public LocalDate getFechaRegistro() {
-        return fechaRegistro;
-    }
-
-    public void setFechaRegistro(LocalDate fechaRegistro) {
-        this.fechaRegistro = fechaRegistro;
-    }
 }

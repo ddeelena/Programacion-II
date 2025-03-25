@@ -3,16 +3,23 @@ package edu.co.sistemagestionempleos.service.impl;
 import edu.co.sistemagestionempleos.model.Candidato;
 import edu.co.sistemagestionempleos.repository.CandidatoRepository;
 import edu.co.sistemagestionempleos.service.CandidatoService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class CandidatoServiceImpl implements CandidatoService {
-    @Autowired
-    private CandidatoRepository candidatoRepository;
+
+    private final CandidatoRepository candidatoRepository;
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public List<Candidato> getAllCandidatos() {
@@ -54,4 +61,10 @@ public class CandidatoServiceImpl implements CandidatoService {
                     return candidato;
                 });
     }
+
+    public Optional<Integer> obtenerCandidatoIdPorUsername(String username) {
+        return candidatoRepository.findByUser_Username(username)
+                .map(Candidato::getId);
+    }
+
 }

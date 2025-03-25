@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/empresas")
@@ -42,6 +43,13 @@ public class EmpresaController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Empresa> deleteEmpresa(@PathVariable Integer id) {
         return empresaService.deleteEmpresa(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/usuario/{username}")
+    public ResponseEntity<Integer> obtenerEmpresaPorUsername(@PathVariable String username) {
+        return empresaService.obtenerEmpresaIdPorUsername(username)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }

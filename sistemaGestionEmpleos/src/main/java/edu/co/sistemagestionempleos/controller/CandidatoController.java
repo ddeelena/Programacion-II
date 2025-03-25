@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/candidatos")
@@ -41,6 +42,13 @@ public class CandidatoController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Candidato> deleteCandidato(@PathVariable Integer id) {
         return candidatoService.deleteCandidato(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/usuario/{username}")
+    public ResponseEntity<Integer> obtenerCandidatoPorUsername(@PathVariable String username) {
+        return candidatoService.obtenerCandidatoIdPorUsername(username)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }

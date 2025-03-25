@@ -14,4 +14,5 @@ public interface EmpresaService {
     Empresa createEmpresa(Empresa empresa);
     Optional<Empresa> updateEmpresa(Integer id, Empresa empresa);
     Optional<Empresa> deleteEmpresa(Integer id);
+    Optional<Integer> obtenerEmpresaIdPorUsername(String username);
 }
