@@ -33,7 +33,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     // Servicio que maneja los detalles de los usuarios (como nombre y permisos)
     private final UserDetailsService userDetailsService;
 
-    // Método que se ejecuta automáticamente en cada solicitud HTTP para filtrar las peticiones
+    // Metodo que se ejecuta automáticamente en cada solicitud HTTP para filtrar las peticiones
     @Override
     protected void doFilterInternal(HttpServletRequest request, // Petición del usuario
                                     HttpServletResponse response, // Respuesta del servidor
